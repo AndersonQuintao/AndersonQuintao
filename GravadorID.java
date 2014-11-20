@@ -4,6 +4,12 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+* Autor: Anderson da Silva Quintão
+* Email: anderson.silva@dce.ufpb.br
+*
+*/
+
 public class GravadorID {
 	public void gravarID(String nomeDoArquivo, long id) throws ArquivoInexistenteException, IOException{
 		String idConvert = Long.toString(id);

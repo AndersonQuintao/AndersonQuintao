@@ -9,6 +9,12 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+* Autor: Anderson da Silva Quintão
+* Email: anderson.silva@dce.ufpb.br
+*
+*/
+
 public class GeradorID {
 	private long contadorID;
 	private final String ARQUIVO = "PersistenciaID.txt";
@@ -34,6 +40,10 @@ public class GeradorID {
 		return this.listaDeID;
 	}
 	
+	/*
+	 Antes de gerar o ID o método carregarID é chamado para que o sistema saiba
+	 qual foi o último id salvo.
+	 */
 	public long gerarID(){
 		try {
 			this.carregarID(ARQUIVO);
